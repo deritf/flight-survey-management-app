@@ -149,6 +149,11 @@ try {
     $fileName = "vuelos_exp_{$nombre_usuario}_{$apellido_usuario}_{$fecha_actual}.xls";
     $filePath = "../exports/" . $fileName;
 
+    $exportDir = dirname($filePath);
+    if (!is_dir($exportDir)) {
+        mkdir($exportDir, 0775, true);
+    }
+
     $writer = new Xls($spreadsheet);
     $writer->save($filePath);
 
