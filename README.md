@@ -99,9 +99,9 @@ La aplicación cuenta con 2 usuarios de prueba:
 
 ### 7. Listo
 
-Ya puedes acceder y utilizar la aplicación desde tu navegador.  
+Recuerda que la carpeta del proyecto debe estar en la carpeta `htdocs` de Apache.
 
-Accede a `http://localhost:8000` o `http://localhost/flight-survey-management-app` si usas XAMPP/WAMP.
+Ya deberías poder acceder y utilizar la aplicación desde tu navegador.  
 
 Si usas XAMPP, WAMP u otro servidor local que sirve desde htdocs, accede a `http://localhost/flight-survey-management-app`.
 Si estás usando otro puerto, por ejemplo el `8080`, deberías acceder a `http://localhost:8080/flight-survey-management-app`.
