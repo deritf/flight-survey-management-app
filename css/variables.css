@@ -1,0 +1,102 @@
+/* Poppins Font Faces */
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Roboto Font Faces */
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --fuente-principal: "Poppins", sans-serif;
+  --fuente-secundaria: "Roboto", sans-serif;
+
+  --color-primario: #00a0eb;
+  --color-secundario: #1f1a17;
+  --color-acento: #ff8500;
+  --color-acento-suave: #ffa341;
+  --color-exito: #28a745;
+  --color-peligro: #dc3545;
+  --color-advertencia: #ffc107;
+  --color-info: #17a2b8;
+
+  --fondo-blanco: #ffffff;
+  --fondo-negro: #000000;
+  --fondo-gris-claro: #ececec;
+  --fondo-gris-oscuro: #343a40;
+
+  --color-texto: #212529;
+  --color-texto-secundario: #6c757d;
+  --color-texto-blanco: #ffffff;
+
+  --tamano-texto-base: 16px;
+  --tamano-titulo: 2rem;
+  --tamano-nav: 1.8rem;
+  --tamano-subtitulo: 5rem;
+  --tamano-sub-subtitulo: 3rem;
+  --tamano-parrafo: 2rem;
+  --tamano-parrafo-medio: 1.3rem;
+  --tamano-parrafo-pequeno: 1rem;
+  --tamano-mini: 1.6rem;
+
+  /* Bordes de filas de la tabla de datos en listado.php */
+  --border-radius: 12px;
+  --fondo-blanco: #fff;
+  --color-texto: #333;
+
+  /* Colores estados de los vuelos: Expirados, Activos, Encuestados en listado.php */
+  --color-vuelos-expirados: #d9534f;
+  --color-vuelos-activos: #ffffff;
+  --color-vuelos-encuestados: #5cb85c;
+  --color-texto-blanco-listado-php: #ffffff;
+  --color-texto-oscuro-listado-php: #000000;
+}

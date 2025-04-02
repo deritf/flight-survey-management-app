@@ -1,0 +1,110 @@
+/* ========================== Cargar XLS (formulario) ================================ */
+
+.formulario-carga {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario-carga * {
+  box-sizing: border-box;
+}
+
+.formulario-carga label {
+  font-weight: bold;
+  display: block;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.formulario-carga input[type="number"],
+.formulario-carga input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formulario-carga footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+footer .boton-volver,
+footer .boton-editar {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ========================== Input file personalizado ================================ */
+
+.custom-file-label {
+  display: block;
+  background-color: #eee;
+  border: 2px dashed #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+}
+
+.custom-file-label:hover {
+  background-color: #f4f4f4;
+}
+
+.custom-file-label input[type="file"] {
+  display: none;
+}
+
+.custom-file-label.seleccionado {
+  background-color: #d1f0d1;
+  border-color: #27ae60;
+  color: #2c662d;
+  font-weight: bold;
+}
+
+#texto-archivo {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  padding-right: 5px;
+}
+
+/* ========================== Responsive ================================ */
+
+@media (max-width: 600px) {
+  .detalle-container {
+    width: 100vw;
+    height: auto;
+    padding: 15px;
+    transform: none;
+    top: auto;
+    left: auto;
+  }
+
+  .formulario-carga footer {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  footer .boton-volver,
+  footer .boton-editar {
+    width: 100%;
+  }
+}
